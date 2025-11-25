@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration_form</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <script defer src="js/forms.js"></script>
+    <script defer src="js/cookie.js"></script>
+    
+       
+</head>
+<body onload="checkCookie()">
+  
+      <form id="signupForm" class="forms">
+    <h2>Registration_form</h2>
+
+    
+    <div class="form-control">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" />
+      <div class="error" id="emailError">Please enter a valid email address.</div>
+    </div>
+
+    
+    <div class="form-control">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password" />
+      <span class="toggle" id="togglePassword">show</span>
+      <div class="error" id="passwordError">
+        Password must be at least 6 characters long.
+      </div>
+    </div>
+
+    
+    <div class="form-control">
+      <label for="confirm">Confirm Password</label>
+      <input type="password" id="confirm" placeholder="Re-enter your password" />
+      <div class="error" id="confirmError">Passwords do not match.</div>
+    </div>
+
+             <div>
+                <input type="radio" name="gender"  class="radioclass">
+                <label for="">Male</label>
+                </div>
+                <div>
+                <input type="radio" name="gender" class="radioclass">
+                <label for="">Female</label>
+                </div>
+            <div>
+                <input type="checkbox" name="terms" id="terms">
+                <label for="terms">I accept terms of service</label>
+                 </div>
+
+    <button type="submit">Sign Up</button>
+  </form>
+  
+</body>
+</html>

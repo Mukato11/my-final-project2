@@ -1,4 +1,5 @@
-// fetch
+
+ // fetch
 
 fetch("httpsjsonplaceholder.typicode.com/users", {
   method: "GET",
