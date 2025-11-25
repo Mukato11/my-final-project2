@@ -89,6 +89,7 @@ h6 {
 
 #nav-menu-container {
     max-width: 100%;
+    background-color: #3F69AA;
     float: left;
     margin: 0;
      
@@ -110,6 +111,8 @@ h6 {
 }
 
 .nav-menu a {
+    max-width: 100%;
+    background-color: #3F69AA;
     padding: 0 0 3px 0;
     text-decoration: none;
     display: inline-block;
@@ -143,6 +146,7 @@ h6 {
     opacity: 1;
 }
 
+
 #mobile-nav-toggle {
     position: fixed;
     right: 0;
@@ -159,7 +163,7 @@ h6 {
 }
 
 #mobile-nav-toggle i {
-    color: #fff;
+    color: darkblue;
 }
 
 #mobile-nav {
@@ -187,7 +191,7 @@ h6 {
 }
 
 #mobile-nav ul li a {
-    color: #ffffff;
+    color: darkblue;
     font-size: 16px;
     text-transform: uppercase;
     overflow: hidden;
@@ -229,7 +233,7 @@ body.mobile-nav-active #mobile-nav {
 }
 
 body.mobile-nav-active #mobile-nav-toggle {
-    color: #fff;
+    color: darkblue;
 }
 
 

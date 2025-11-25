@@ -1,0 +1,79 @@
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3F69AA;
+  padding: 16PX;
+}
+
+
+.burgermenu {
+  display: none; 
+  cursor: pointer;
+  background: black;
+  border: none;
+  padding: 0;
+  z-index: 1000;
+}
+
+.burgerline {
+  display: block;
+  width: 24px;
+  height: 4px;
+  background-color: blue;
+  margin: 4px 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+.navlinks {
+  display: flex;
+    }
+
+.navlinks a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+
+@media screen and (max-width: 768px) {
+  .burgermenu {
+    display: block; 
+  }
+
+  .navlinks {
+    position: fixed;
+    top: 0;
+    right: -100%; 
+    width: 70%;
+    height: 100%;
+    flex-direction: column;
+    background-color: #3F69AA;
+    padding-top: 60px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    transition: right 0.3s ease-in-out;
+  }
+
+  .navlinks.active {
+    right: 0; 
+  }
+
+  .navlinks li {
+    text-align: center;
+  }
+
+  /* animation icon as "X" */
+  .burgermenu.active .burgerline:nth-child(2) {
+    opacity: 0; 
+  }
+
+  .burgermenu.active .burgerline:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .burgermenu.active .burgerline:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
